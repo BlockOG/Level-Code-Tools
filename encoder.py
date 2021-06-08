@@ -15,11 +15,11 @@ def decode_string(char_string):
     return result
 
 def encode_number(num):
-    result = []
+    result = ""
     counter = 0
     
     while num > (74 ** counter):
-        result.append(key[num // (74 ** counter) % 74])
+        result += key[num // (74 ** counter) % 74]
         counter += 1
     
-    return "".join(result[::-1])
+    return result[::-1]
