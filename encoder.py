@@ -14,7 +14,7 @@ def decode_string(char_string):
         result += decode_dict[char]
     return result
 
-def encode_string(num):
+def encode_number(num):
     result = []
     counter = 0
     
