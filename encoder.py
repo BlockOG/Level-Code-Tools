@@ -15,10 +15,12 @@ def decode_string(char_string):
     return result
 
 def encode_number(num):
+    if num == 0: return "0"
+    
     result = ""
     counter = 0
     
-    while num > (74 ** counter):
+    while num >= (74 ** counter):
         result += key[num // (74 ** counter) % 74]
         counter += 1
     
