@@ -32,14 +32,14 @@ if __name__ == "__main__":
     inp = input("Choose: ")
     if inp == "1":
         print("Decoder chosen")
-        string = input("Write/paste encoded string here: ")
+        string = input("Write/paste string here: ")
         string_dec = decode_string(string)
         print("String decoded")
         print(f"The original string is {string}")
         print(f"The decoded number is {string_dec}")
     elif inp == "2":
         print("Encoder chosen")
-        number = input("Write/paste encoded string here: ")
+        number = input("Write/paste number here: ")
         number_enc = encode_number(number)
         print("Number encoded")
         print(f"The original number is {number}")
