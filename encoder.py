@@ -25,3 +25,24 @@ def encode_number(num):
         counter += 1
     
     return result[::-1]
+
+if __name__ == "__main__":
+    print("1) Decoder")
+    print("2) Encoder")
+    inp = input("Choose: ")
+    if inp == 1:
+        print("Decoder chosen")
+        string = input("Write/paste encoded string here: ")
+        string_dec = decode_string(string)
+        print("String decoded")
+        print(f"The original string is {string}")
+        print(f"The decoded number is {string_dec}")
+    elif inp == 2:
+        print("Encoder chosen")
+        number = input("Write/paste encoded string here: ")
+        number_enc = encode_number(number)
+        print("Number encoded")
+        print(f"The original number is {number}")
+        print(f"The encoded string is {number_dec}")
+    else:
+        print("You have chosen something that's not in the options!")
