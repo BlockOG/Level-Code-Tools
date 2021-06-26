@@ -43,6 +43,6 @@ if __name__ == "__main__":
         number_enc = encode_number(int(number))
         print("Number encoded")
         print(f"The original number is {number}")
-        print(f"The encoded string is {number_dec}")
+        print(f"The encoded string is {number_enc}")
     else:
         print("You have chosen something that's not in the options!")
