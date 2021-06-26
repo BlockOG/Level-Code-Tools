@@ -40,7 +40,7 @@ if __name__ == "__main__":
     elif inp == "2":
         print("Encoder chosen")
         number = input("Write/paste number here: ")
-        number_enc = encode_number(number)
+        number_enc = encode_number(int(number))
         print("Number encoded")
         print(f"The original number is {number}")
         print(f"The encoded string is {number_dec}")
