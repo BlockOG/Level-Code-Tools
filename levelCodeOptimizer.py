@@ -66,7 +66,8 @@ except ModuleNotFoundError:
     def colored(text, _): return text
 
 # Accepting an input of the level code
-levelcode = input(colored("Paste level code here: ", "green"))
+print(colored("Paste level code here: ", "green"), end="")
+levelcode = input()
 
 # Loading the inputed code
 inputData = loadFromInput(levelcode)

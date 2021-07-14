@@ -40,25 +40,31 @@ if __name__ == "__main__":
         print(colored("1)", "white"), colored("Decoder", "blue"))
         print(colored("2)", "white"), colored("Encoder", "cyan"))
         print(colored("3)", "white"), colored("Exit", "red"))
-        inp = input(colored("Choose: ", "yellow"))
+        print(colored("Choose: ", "yellow"), end="")
+        inp = input()
         if inp == "1":
             print(colored("Decoder", "blue"), colored("chosen\n", "yellow"))
             
-            string = input("Write/paste string here: ")
+            print(colored("Write/paste string here: ", "green"), end="")
+            string = input()
             string_dec = decode_string(string)
-            print("String decoded")
-            print(f"The original string is {string}")
-            print(f"The decoded number is {string_dec}\n")
+            print()
+            print(colored("String decoded", "blue"))
+            print(colored(f"The original string is {string}", "blue"))
+            print(colored(f"The decoded number is {string_dec}\n", "blue"))
+            print()
             
         elif inp == "2":
             print(colored("Encoder", "cyan"), colored("chosen\n", "yellow"))
             
-            number = input("Write/paste number here: ")
+            print(colored("Write/paste number here: ", "green"), end="")
+            number = input()
             number_enc = encode_number(int(number))
-            print("Number encoded")
-            print(f"The original number is {number}")
-            print(f"The encoded string is {number_enc}\n")
-            
+            print()
+            print(colored("Number encoded", "blue"))
+            print(colored(f"The original number is {number}", "blue"))
+            print(colored(f"The encoded string is {number_enc}", "blue"))
+            print()
         elif inp == "3": pass
         else:
             print("You have chosen something that's not in the options!")

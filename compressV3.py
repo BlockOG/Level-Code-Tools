@@ -61,7 +61,8 @@ if __name__ == "__main__":
         def colored(text, _): return text
     
     try:
-        compress = input(colored("Paste level code here: ", "green"))
+        print(colored("Paste level code here: ", "green"), end="")
+        compress = input()
         list_compress = compress.split(";")
         compress = compressV3(list_compress[3], decode_string(list_compress[1]), decode_string(list_compress[2]))
     except Exception:

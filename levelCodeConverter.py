@@ -66,7 +66,8 @@ if __name__ == '__main__':
     except ModuleNotFoundError:
         def colored(text, _): return text
     
-    convert = convertV1toV3(input(colored("Paste level code here: ", "green")))
+    print(colored("Paste level code here: ", "green"), end="")
+    convert = convertV1toV3(input())
     
     print()
     print(colored("Your level code is converted:", "blue"))
