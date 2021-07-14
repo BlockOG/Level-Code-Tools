@@ -52,5 +52,7 @@ def loadFromInput(inp):
         
         return inp
         
+    elif inp.startswith("V2"):
+        return "V2"
     else:
         return None

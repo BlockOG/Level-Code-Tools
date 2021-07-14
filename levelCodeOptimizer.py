@@ -74,7 +74,14 @@ inputData = loadFromInput(levelcode)
 
 if not inputData:
     # ERROR
+    print()
     print(colored("ERROR", "red"))
+    print()
+    
+elif inputData == "V2":
+    print()
+    print(colored("Come on, it was said V2 doesn't work", "yellow"))
+    print()
     
 else:
     # Convert to V3 code if V1
