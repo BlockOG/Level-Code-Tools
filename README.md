@@ -32,6 +32,12 @@ And if you want a GUI for the encoder tool you can do
 pip install pysimplegui
 ```
 
+And if you don't already have numpy for some reason, install it
+
+```
+pip install numpy
+```
+
 ##### All tools in here are made in python
 
 ## Level Code Optimizer
