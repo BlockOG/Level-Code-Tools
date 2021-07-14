@@ -2,16 +2,12 @@ key = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!$%&+-.=?^{
 
 encode_tuple = tuple(list(key))
 
-decode_dict = {}
-for i in range(74):
-    decode_dict[key[i]] = i
-
 def decode_string(char_string):
     global decode_dict
     result = 0
     for char in char_string:
         result *= 74
-        result = result + decode_dict[char]
+        result = result + key.find(char)
     return result
 
 def encode_number(num):
