@@ -3,7 +3,9 @@ This is github repository contains a couple useful Cell Machine Mystic Mod tools
 
 If you find any issue report them in the [Issues Tab](https://github.com/BlockOG/Level-Code-Tools/issues)
 
-To use the tools [download python](https://www.python.org/downloads/) if you're on windows then download the code
+To use the tools [download python](https://www.python.org/downloads/) if you're on windows
+
+Then download the code
 
 ![Screenshot from 2021-07-14 14-55-10](https://user-images.githubusercontent.com/68442822/125618377-cadd57ed-22d8-4cbc-a933-216afa529ddb.png)
 
