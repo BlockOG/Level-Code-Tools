@@ -10,7 +10,7 @@ To use the tools [download python](https://www.python.org/downloads/) if you're 
 Extract the zip file, then open the directory you extracted it to in cmd/terminal and type
 
 ```
-$ python toolName.py
+python toolName.py
 ```
 
 On some OSes it's `python3` so try that too
@@ -19,6 +19,7 @@ If you want to have colored text that I built into it then do
 
 ```
 pip install termcolor
+pip install colorama
 ```
 
 And the goes to pip it may be `pip3` on some OSes
