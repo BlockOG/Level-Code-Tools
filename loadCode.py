@@ -8,7 +8,7 @@ def loadFromInput(inp):
         
         return inp
         
-    elif re.search(r"V3;([\da-zA-Z!$%&+-.=?^{}\(\)]+;){2}[\da-zA-Z!$%&+-.=?^{}\(\)]*;[\w\s-]*;", inp):
+    elif re.search(r"V3;([\da-zA-Z!$%&+-.=?^{}\(\)]+;){2}[\da-zA-Z!$%&+-.=?^{}\(\)]*;[\w\s\-\.]*;", inp):
         inp = inp.split(";")
         
         level_cells = ""
