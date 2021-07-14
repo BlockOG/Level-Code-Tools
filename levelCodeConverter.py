@@ -26,14 +26,14 @@ def convertV1toV3(V1):
     try:
         if len(V1[3][0][0]) != 0 :
             for i in V1[3]:
-                grid_array[int(i[0]) + int(i[1]) * int(V1[2])] += 1
+                grid_array[int(i[0]) + int(i[1]) * int(V1[1])] += 1
     except IndexError:
         print(colored("Somehow, some placeable background is outside your grid", "red"))
     
     try:
         if len(V1[4][0][0]) != 0 :
             for i in V1[4]:
-                grid_array[int(i[2]) + int(i[3]) * int(V1[2])] += 2 * int(i[0]) + 18 * int(i[1]) - 72
+                grid_array[int(i[2]) + int(i[3]) * int(V1[1])] += 2 * int(i[0]) + 18 * int(i[1]) - 72
     except IndexError:
         print(colored("Somehow, a block is outside your grid", "red"))
     
