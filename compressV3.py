@@ -55,6 +55,8 @@ def compressV3(code: str, width: int, height: int):
 if __name__ == "__main__":
     try:
         from termcolor import colored
+        import colorama
+        colorama.init()
     except ModuleNotFoundError:
         def colored(text, _): return text
     

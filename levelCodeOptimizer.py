@@ -60,6 +60,8 @@ def optimize(levelTypeIndicator, cellarray):
 
 try:
     from termcolor import colored
+    import colorama
+    colorama.init()
 except ModuleNotFoundError:
     def colored(text, _): return text
 

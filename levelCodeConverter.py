@@ -61,6 +61,8 @@ def convertV1toV3(V1):
 if __name__ == '__main__':
     try:
         from termcolor import colored
+        import colorama
+        colorama.init()
     except ModuleNotFoundError:
         def colored(text, _): return text
     
