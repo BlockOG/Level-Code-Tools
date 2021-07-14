@@ -2,9 +2,10 @@ import numpy as np
 from encoder import decode_string, encode_number, key
 import re
 
-def compressV3(code: str, width: int, height: int):
+def compressV3(code: str, width: int, height: int) -> str:
     export = ""
-    grid_array = np.array([72] * (width * height), dtype=int)
+    amount = width * height
+    grid_array = np.array([72] * amount, dtype=int)
     
     for cell in range(len(code)):
         grid_array[cell] = decode_string(code[cell])
