@@ -24,7 +24,7 @@ pip install termcolor
 pip install colorama
 ```
 
-And the goes to pip it may be `pip3` on some OSes
+It may be `pip3` on some OSes
 
 And if you want a GUI for the encoder tool you can do
 
@@ -38,13 +38,12 @@ And if you don't already have numpy for some reason, install it
 pip install numpy
 ```
 
-##### All tools in here are made in python
-
 ## Level Code Optimizer
 A Mystic Mod level code optimizer
 
 Changes all rotators, push cells, walls, enemies and trash cells to be their default rotation and changes the rotation of slide cells a bit
-### THERE WILL NEVER BE V2 SINCE IT DOESN'T WORK
+
+There might at some point be V2 support
 
 ## Level Code Converter
 A Mystic Mod level code converter
