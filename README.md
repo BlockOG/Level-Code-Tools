@@ -1,3 +1,5 @@
+## This tool is deprecated, please use [BlockOG/cell_machine_levels](https://github.com/BlockOG/cell_machine_levels) instead.
+
 # Level Code Tools
 This is github repository contains a couple useful Cell Machine Mystic Mod tools
 
